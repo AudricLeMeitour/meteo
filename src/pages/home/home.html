@@ -1,18 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+  <ion-navbar color="primary">
+    <button menuToggle ion-button icon-only>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>HOme</ion-title>
   </ion-navbar>
+ 
+  <ion-toolbar color="secondary">
+    <ion-title>La météo dans ma ville</ion-title>
+  </ion-toolbar>
 </ion-header>
-
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Voir la météo pour :</ion-label>
+      <ion-select [(ngModel)]="jour">
+        <ion-option value="Lundi">Lundi</ion-option>
+        <ion-option value="Mardi">Mardi</ion-option>
+        <ion-option value="Mercredi">Mercredi</ion-option>
+        <ion-option value="Jeudi">Jeudi</ion-option>
+        <ion-option value="Vendredi">Vendredi</ion-option>
+        <ion-option value="Samedi">Samedi</ion-option>
+        <ion-option value="Dimanche">Dimanche</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
