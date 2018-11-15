@@ -1,0 +1,8 @@
+{
+  "name": "meteo",
+  "app_id": "b72ed187",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
